@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/businessName"
+        android:layout_marginLeft="@dimen/_default_margin"
+        android:layout_marginTop="@dimen/_default_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/udacity"
+        android:textSize="@dimen/_default_text_size"
+        android:drawablePadding="@dimen/_default_margin"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+    />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_marginLeft="@dimen/_default_margin"
+        android:layout_marginTop="@dimen/_default_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/businessName"
+        android:autoLink="phone"
+        android:drawableLeft="@android:drawable/ic_menu_call"
+        android:textSize="@dimen/_default_text_size"
+        android:drawablePadding="@dimen/_default_margin"
+        android:text="@string/_650_555_5555" />
+
+    <TextView
+        android:id="@+id/webSite"
+        android:layout_marginLeft="@dimen/_default_margin"
+        android:layout_marginTop="@dimen/_default_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneNumber"
+        android:autoLink="web"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:textSize="@dimen/_default_text_size"
+        android:drawablePadding="@dimen/_default_margin"
+        android:text="@string/http_www_udacity_com" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_marginLeft="@dimen/_default_margin"
+        android:layout_marginTop="@dimen/_default_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/webSite"
+        android:drawableLeft="@android:drawable/ic_menu_mylocation"
+        android:textSize="@dimen/_default_text_size"
+        android:drawablePadding="@dimen/_default_margin"
+        android:text="@string/_2465_latham_st_mountain_view_ca_94043" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="@dimen/_image_margin"
+        android:layout_below="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/udacity750x600" />
+</RelativeLayout>
