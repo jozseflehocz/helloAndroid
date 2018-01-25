@@ -54,6 +54,7 @@
         android:drawableLeft="@android:drawable/ic_menu_mylocation"
         android:textSize="@dimen/_default_text_size"
         android:drawablePadding="@dimen/_default_margin"
+        android:autoLink="map"
         android:text="@string/_2465_latham_st_mountain_view_ca_94043" />
 
     <ImageView
